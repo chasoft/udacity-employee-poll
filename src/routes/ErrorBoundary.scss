@@ -1,0 +1,18 @@
+.error-boundary {
+	display: grid;
+	height: 90svh;
+	padding: 2rem;
+	text-align: center;
+	place-content: center;
+	gap: 3rem;
+
+	.btn-group {
+		display: flex;
+		justify-content: center;
+		gap: 1rem;
+
+		> * {
+			padding: 0.25rem 0.5rem;
+		}
+	}
+}

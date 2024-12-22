@@ -1,0 +1,17 @@
+:root {
+	--spacing-sm: 4px;
+	--spacing: 8px;
+	--spacing-lg: 12px;
+	--spacing-xxl: 18px;
+	--font-size: 1rem;
+
+	--header-color: white;
+	--header-bg: darkgreen;
+
+	--font-headline: 2rem;
+
+	--action-button-size: 48px;
+	--book-cover-size: 96px;
+
+	--min-col-size: 150px;
+}
