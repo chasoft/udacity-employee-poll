@@ -16,6 +16,14 @@
 	"organizeImports": {
 		"enabled": true
 	},
+	"css": {
+		"formatter": {
+			"enabled": true
+		},
+		"linter": {
+			"enabled": true
+		}
+	},
 	"linter": {
 		"enabled": true,
 		"rules": {
@@ -24,7 +32,14 @@
 	},
 	"javascript": {
 		"formatter": {
-			"quoteStyle": "double"
+			"quoteStyle": "double",
+			"attributePosition": "auto",
+			"bracketSameLine": false,
+			"bracketSpacing": true,
+			"arrowParentheses": "always",
+			"semicolons": "asNeeded",
+			"trailingCommas": "none",
+			"quoteProperties": "asNeeded"
 		}
 	}
 }
