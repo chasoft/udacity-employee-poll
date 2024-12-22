@@ -1,6 +1,6 @@
-import { appConfig } from "../../shared/config";
+import { appConfig } from "../../shared/config"
 
-import "./route.scss";
+import "./route.scss"
 
 export function HomePage() {
 	return (
@@ -8,5 +8,5 @@ export function HomePage() {
 			<header>{appConfig.title}</header>
 			<section className="page-content">Hello world</section>
 		</main>
-	);
+	)
 }

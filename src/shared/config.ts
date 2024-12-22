@@ -1,3 +1,3 @@
 export const appConfig = {
-	title: "Employee Poll",
-} as const;
+	title: "Employee Poll"
+} as const

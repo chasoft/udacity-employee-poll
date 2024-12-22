@@ -1,22 +1,22 @@
-import { useNavigate, useRouteError } from "react-router";
+import { useNavigate, useRouteError } from "react-router"
 
-import "./ErrorBoundary.scss";
+import "./ErrorBoundary.scss"
 
 type Error = Partial<{
-	status: number;
-	statusText: string;
-	internal: boolean;
-	data: string;
-	error: Record<string, unknown>;
-}>;
+	status: number
+	statusText: string
+	internal: boolean
+	data: string
+	error: Record<string, unknown>
+}>
 
 export function ErrorBoundary() {
-	const error = (useRouteError() ?? {}) as Error;
-	const navigate = useNavigate();
+	const error = (useRouteError() ?? {}) as Error
+	const navigate = useNavigate()
 	const errorMessage =
 		error.status === 404
 			? "404: Page Not Found"
-			: "Ops, something wrong happened";
+			: "Ops, something wrong happened"
 	return (
 		<div className="error-boundary">
 			{errorMessage}
@@ -37,5 +37,5 @@ export function ErrorBoundary() {
 				</button>
 			</div>
 		</div>
-	);
+	)
 }

@@ -1,8 +1,8 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router"
 
-import { ErrorBoundary } from "./ErrorBoundary";
-import { RootLayout } from "./Layout";
-import { HomePage } from "./home/route";
+import { ErrorBoundary } from "./ErrorBoundary"
+import { RootLayout } from "./Layout"
+import { HomePage } from "./home/route"
 
 export const appRouter = createBrowserRouter([
 	{
@@ -14,8 +14,8 @@ export const appRouter = createBrowserRouter([
 			{
 				id: "home-page",
 				path: "/",
-				element: <HomePage />,
-			},
-		],
-	},
-]);
+				element: <HomePage />
+			}
+		]
+	}
+])
