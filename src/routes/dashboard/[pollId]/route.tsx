@@ -1,4 +1,3 @@
-import React from "react"
 import { BiUpvote } from "react-icons/bi"
 import {
 	type ActionFunctionArgs,

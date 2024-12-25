@@ -1,4 +1,3 @@
-import React from "react"
 import { type LoaderFunctionArgs, Outlet } from "react-router"
 
 import { usePageTitle } from "~/shared/usePageTitle"

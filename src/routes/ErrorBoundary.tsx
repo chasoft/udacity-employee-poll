@@ -1,4 +1,3 @@
-import React from "react"
 import { useNavigate, useRouteError } from "react-router"
 import { Button } from "~/components/Button"
 

@@ -1,5 +1,5 @@
 import clsx from "clsx"
-import React, { type ButtonHTMLAttributes } from "react"
+import type { ButtonHTMLAttributes } from "react"
 
 import "./Button.scss"
 

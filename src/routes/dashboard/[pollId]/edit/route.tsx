@@ -1,5 +1,3 @@
-import React from "react"
-
 import "./route.scss"
 
 export function EditPollRoute() {

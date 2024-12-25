@@ -1,4 +1,3 @@
-import React from "react"
 import { MdLogout } from "react-icons/md"
 import { Link, useLocation, useNavigate } from "react-router"
 

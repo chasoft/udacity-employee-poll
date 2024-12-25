@@ -25,7 +25,7 @@ bun run test
 ## Achievement
 
 - Passed typecheck `bun check-all` and there is no error.
-- All tests passed `bun test`
+- All tests passed `bun run test`
 
 ## Notes
 

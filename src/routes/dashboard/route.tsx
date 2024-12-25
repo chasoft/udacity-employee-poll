@@ -1,5 +1,3 @@
-import React from "react"
-
 import { useAppSelector } from "~/+state/hooks"
 import { getFilteredQuestions } from "~/+state/slices/questions"
 import { getUsers } from "~/+state/slices/users"

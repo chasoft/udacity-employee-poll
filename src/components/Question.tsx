@@ -1,4 +1,3 @@
-import React from "react"
 import type { Question, User } from "~/shared/types"
 
 import { Avatar } from "./Avatar"

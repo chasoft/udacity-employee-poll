@@ -1,4 +1,3 @@
-import React from "react"
 import { type LoaderFunctionArgs, Outlet, redirect } from "react-router"
 
 import { getInitQuestionsData } from "~/+state/actions/questions"

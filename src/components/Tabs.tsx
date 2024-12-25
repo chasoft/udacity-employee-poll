@@ -1,5 +1,3 @@
-import React from "react"
-
 import "./Tabs.scss"
 
 export function Tabs() {

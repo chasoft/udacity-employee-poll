@@ -1,4 +1,3 @@
-import React from "react"
 import { useAppSelector } from "~/+state/hooks"
 import { getLeaderboard, getUsers } from "~/+state/slices/users"
 import { Avatar } from "~/components/Avatar"
