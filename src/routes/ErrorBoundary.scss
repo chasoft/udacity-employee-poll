@@ -2,17 +2,25 @@
 	display: grid;
 	height: 90svh;
 	padding: 2rem;
+	-webkit-user-select: none;
+	user-select: none;
 	text-align: center;
 	place-content: center;
-	gap: 3rem;
+	gap: 1rem;
+
+	.content {
+		padding: var(--spacing-xxl);
+		border: 1px solid var(--color-secondary);
+		border-radius: var(--spacing);
+	}
 
 	.btn-group {
 		display: flex;
 		justify-content: center;
 		gap: 1rem;
 
-		> * {
-			padding: 0.25rem 0.5rem;
+		button {
+			border-radius: var(--spacing);
 		}
 	}
 }

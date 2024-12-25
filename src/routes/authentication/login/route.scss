@@ -1,0 +1,22 @@
+.login-route {
+	position: relative;
+	height: 100%;
+
+	.error-messsage {
+		color: red;
+	}
+
+	.note {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: clamp(150px, 100%, 450px);
+		padding: var(--spacing-xxl);
+		font-size: small;
+
+		ul {
+			padding-inline-start: var(--spacing-xxl);
+			list-style: disc;
+		}
+	}
+}

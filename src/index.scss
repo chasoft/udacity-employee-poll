@@ -1,0 +1,37 @@
+:root {
+	line-height: 1.5;
+	font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	text-rendering: optimizeLegibility;
+
+	font-synthesis: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/* Common CSS for form and its elements */
+
+form.normal-form {
+	display: flex;
+	flex-direction: column;
+	width: clamp(150px, 100%, 300px);
+	margin: 0 auto;
+	gap: 0.85rem;
+
+	.form-group {
+		display: flex;
+		flex-direction: column;
+	}
+
+	input {
+		padding: var(--spacing);
+		border-radius: var(--spacing-sm);
+	}
+
+	.btn-group {
+		display: flex;
+		justify-content: center;
+		margin-top: var(--spacing-xxl);
+		gap: 2rem;
+	}
+}

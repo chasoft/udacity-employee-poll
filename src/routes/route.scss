@@ -1,0 +1,23 @@
+.home-route {
+	display: grid;
+	width: clamp(150px, 100%, 500px);
+	height: 60%;
+	line-height: 4ch;
+	margin: 0 auto;
+	-webkit-user-select: none;
+	user-select: none;
+	text-align: center;
+	font-size: large;
+	place-content: center;
+	gap: 1rem;
+
+	.logged-in-user {
+		color: var(--color-secondary);
+		font-weight: bolder;
+	}
+
+	p {
+		line-height: normal;
+		overflow-wrap: break-word;
+	}
+}

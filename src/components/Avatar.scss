@@ -1,0 +1,23 @@
+.avatar {
+	display: flex;
+	align-items: center;
+	height: 100%;
+	gap: var(--spacing);
+
+	img {
+		width: var(--avatar-size);
+		height: var(--avatar-size);
+		border-radius: 50%;
+	}
+
+	.info {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.2;
+		font-size: 0.75rem;
+
+		.name {
+			font-weight: bold;
+		}
+	}
+}

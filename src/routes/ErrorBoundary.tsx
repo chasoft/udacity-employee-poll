@@ -1,40 +1,34 @@
+import React from "react"
 import { useNavigate, useRouteError } from "react-router"
+import { Button } from "~/components/Button"
 
 import "./ErrorBoundary.scss"
 
-type Error = Partial<{
-	status: number
-	statusText: string
-	internal: boolean
-	data: string
-	error: Record<string, unknown>
-}>
-
 export function ErrorBoundary() {
-	const error = (useRouteError() ?? {}) as Error
+	const error = (useRouteError() ?? {}) as { status: number; message: string }
 	const navigate = useNavigate()
+
 	const errorMessage =
 		error.status === 404
-			? "404: Page Not Found"
-			: "Ops, something wrong happened"
+			? "Ops, requested URL not found"
+			: error.message
+				? error.message
+				: "Ops, something wrong happened. Unknown reason."
+
 	return (
 		<div className="error-boundary">
-			{errorMessage}
+			<div className="content">
+				<h2>{error.status}</h2>
+				{errorMessage}
+			</div>
 			<div className="btn-group">
-				<button
-					type="button"
-					className="btn go-back"
-					onClick={() => navigate(-1)}
-				>
+				<Button kind="ghost" onClick={() => window.location.reload()}>
+					Refresh
+				</Button>
+				<Button kind="outline" onClick={() => navigate(-1)}>
 					Go Back
-				</button>
-				<button
-					type="button"
-					className="btn go-home"
-					onClick={() => navigate("/")}
-				>
-					Go Home
-				</button>
+				</Button>
+				<Button onClick={() => navigate("/")}>Go Home</Button>
 			</div>
 		</div>
 	)

@@ -13,12 +13,21 @@ Run following commands to start local development:
 bun i
 
 # start dev server
-bun dev
+bun run dev
 
 # run following command to ensure the whole application is good
-bun check-all
+bun run check-all
+
+# to run tests in the project, please run
+bun run test
 ```
 
 ## Achievement
 
 - Passed typecheck `bun check-all` and there is no error.
+- All tests passed `bun test`
+
+## Notes
+
+- Some skeleton implementation are taken from <https://redux-toolkit.js.org/usage/usage-with-typescript>
+- Due to time constraints, I'm unable to fully support a responsive UI (partial only).

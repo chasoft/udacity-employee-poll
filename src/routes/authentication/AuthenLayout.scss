@@ -1,0 +1,19 @@
+.authen-layout {
+	display: flex;
+	overflow: auto;
+	flex-direction: column;
+	flex-grow: 1;
+	padding: var(--spacing-xxl);
+	border: 1px solid gray;
+	border-radius: var(--spacing-xxl);
+	gap: calc(var(--spacing-xxl) * 3);
+
+	header {
+		font-size: 1.5rem;
+		font-weight: bolder;
+	}
+
+	main {
+		flex-grow: 1;
+	}
+}

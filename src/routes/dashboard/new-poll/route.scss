@@ -1,0 +1,9 @@
+.new-poll-route {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--spacing-xxl) * 3);
+
+	.normal-form {
+		width: clamp(150px, 100%, 500px);
+	}
+}

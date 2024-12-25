@@ -1,0 +1,27 @@
+.question-block {
+	display: flex;
+	flex-direction: column;
+	border: 1px solid gray;
+	border-radius: var(--spacing);
+
+	.author {
+		display: flex;
+		flex-direction: column;
+		padding: var(--spacing);
+		gap: var(--spacing);
+
+		a {
+			text-decoration: none;
+		}
+	}
+
+	.date-time {
+		text-align: right;
+		font-size: 0.60rem;
+	}
+
+	button {
+		width: 100%;
+		border-radius: 0 0 var(--spacing) var(--spacing);
+	}
+}

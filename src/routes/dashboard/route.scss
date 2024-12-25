@@ -1,0 +1,36 @@
+.dashboard-route {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 6rem;
+	gap: 1rem;
+
+	>.page-title {
+		padding-bottom: 0;
+	}
+
+	section {
+		padding: var(--spacing-xxl);
+		border: 1px solid gray;
+		border-radius: var(--spacing-lg);
+
+		h3 {
+			margin-bottom: var(--spacing-xxl);
+		}
+	}
+
+	.questionsList {
+		display: grid;
+		padding-inline-start: 0;
+		grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+		gap: var(--spacing-xxl);
+	}
+
+	.loading-layer {
+		position: absolute;
+		display: grid;
+		background-color: white;
+		inset: 0;
+		place-content: center;
+	}
+}

@@ -1,0 +1,65 @@
+.guest-navigator {
+	display: flex;
+	gap: var(--spacing-lg);
+
+	.sub-btn,
+	.sub-btn:hover {
+		color: white;
+	}
+}
+
+.loggedin-navigator {
+	display: flex;
+	flex-grow: 1;
+	gap: var(--spacing);
+
+	.sub-btn,
+	.sub-btn:hover {
+		color: white;
+	}
+
+	.tabs {
+		display: flex;
+		align-items: center;
+		flex-grow: 1;
+		justify-content: center;
+		gap: 0.5rem;
+
+		.active {
+			color: black;
+			background-color: white;
+		}
+
+		.active:hover {
+			color: white;
+			background-color: hsl(from var(--color-gray) h s 80% / 0.5);
+		}
+
+		li:not(:last-child) {
+			position: relative;
+			padding-right: var(--spacing-lg);
+
+			&::after {
+				position: absolute;
+				right: 0;
+				content: '>';
+			}
+		}
+	}
+
+	.logout-btn {
+		display: grid;
+		width: 37px;
+		height: 37px;
+		padding: var(--spacing-sm);
+		margin-right: -6px;
+		border-radius: 50%;
+		background: var(--color-secondary);
+		transition: all 300ms;
+		place-content: center;
+
+		&:hover {
+			background-color: hsl(from var(--color-secondary) h s 70% / 0.6);
+		}
+	}
+}

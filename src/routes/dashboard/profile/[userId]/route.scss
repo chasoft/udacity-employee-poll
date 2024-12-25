@@ -1,0 +1,52 @@
+.profile-route {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	-webkit-user-select: none;
+	user-select: none;
+	text-decoration: none;
+
+	section {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		width: clamp(150px, 100%, 400px);
+		margin: 0 auto;
+		gap: 0.85rem;
+	}
+
+	.loading {
+		display: grid;
+		height: 300px;
+		place-content: center;
+	}
+
+	.profile-avatar {
+		display: flex;
+		align-items: center;
+		gap: var(--spacing-xxl);
+
+		img {
+			width: calc(var(--avatar-size) * 3);
+			height: calc(var(--avatar-size) * 3);
+			border-radius: 50%;
+		}
+
+		.info {
+			display: flex;
+			flex-direction: column;
+			line-height: 1.5;
+			font-size: 1.25rem;
+
+			.name {
+				font-weight: bold;
+			}
+		}
+	}
+
+	.activities {
+		ul {
+			list-style: circle;
+		}
+	}
+}

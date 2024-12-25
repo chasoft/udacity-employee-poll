@@ -1,0 +1,70 @@
+.view-poll-route {
+	-webkit-user-select: none;
+	user-select: none;
+
+	section {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		gap: var(--spacing-xxl);
+
+		.avatar {
+			width: 80px;
+			height: 80px;
+		}
+
+		>p {
+			font-size: x-large;
+		}
+
+		.options {
+			display: flex;
+			width: clamp(250px, 100%, 500px);
+			gap: var(--spacing-xxl);
+
+			.item {
+				display: flex;
+				flex-direction: column;
+				flex-grow: 1;
+				border: 1px solid gray;
+
+				&.selected {
+					border: 1px solid var(--color-secondary);
+					background-color: hsl(from var(--color-secondary) h s 85% / 0.9);
+
+					button>span {
+						color: white;
+					}
+				}
+
+				p {
+					padding: var(--spacing-xxl);
+				}
+
+				button {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100%;
+					border-radius: 0;
+					gap: var(--spacing-lg);
+
+					&:hover>svg {
+						opacity: 1;
+						color: white;
+					}
+
+					svg {
+						opacity: 0.2;
+					}
+				}
+			}
+		}
+
+		.progress-wrapper {
+			display: grid;
+			place-content: center;
+			height: 100px;
+		}
+	}
+}

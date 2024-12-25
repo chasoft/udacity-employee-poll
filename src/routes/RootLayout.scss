@@ -1,0 +1,41 @@
+.app-root-layout {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	height: 100svh;
+	padding: var(--spacing-xxl);
+	background-color: var(--color-body-background);
+
+	.root-content {
+		display: flex;
+		flex-direction: column;
+		flex-grow: 1;
+		width: 100%;
+		max-width: var(--max-width);
+		height: 100%;
+		padding: var(--spacing-xxl);
+		margin: 0 auto;
+		border-radius: var(--page-round);
+		background-color: white;
+		gap: var(--spacing-xxl);
+
+		.root-header {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: var(--spacing-lg) var(--spacing-xxl);
+			border-radius: var(--spacing-xxl);
+			color: white;
+			background-color: var(--color-body-background);
+			-webkit-user-select: none;
+			user-select: none;
+			font-size: 1.25rem;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+			a {
+				color: inherit;
+				text-decoration: none;
+			}
+		}
+	}
+}

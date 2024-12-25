@@ -1,0 +1,71 @@
+button:disabled.btn-default-style,
+button:hover.btn-default-style:disabled {
+	color: rgb(59, 59, 59) !important;
+	background: gray;
+	cursor: not-allowed;
+}
+
+.btn-default-style {
+	padding: 0.5rem 0.85rem;
+	border: 1px solid transparent;
+	border-radius: var(--spacing-xxl);
+	color: white;
+	cursor: pointer;
+	-webkit-user-select: none;
+	user-select: none;
+	transition: all 300ms;
+
+	/* Kind */
+
+	&.primary {
+		background-color: var(--color-primary);
+	}
+
+	&.primary:hover {
+		background-color: hsl(from var(--color-primary) h s 50% / 0.8);
+	}
+
+	&.secondary {
+		background-color: var(--color-secondary);
+	}
+
+	&.secondary:hover {
+		background-color: hsl(from var(--color-secondary) h s 30% / 0.5);
+	}
+
+	&.outline {
+		border-color: hsl(from var(--color-primary) h s 50% / 0.8);
+		color: black;
+		background-color: white;
+	}
+
+	&.outline:hover {
+		border-color: hsl(from var(--color-primary) h s 50% / 0.8);
+		color: white;
+		background-color: hsl(from var(--color-primary) h s 50% / 0.8);
+	}
+
+	&.ghost {
+		color: black;
+		background-color: transparent;
+	}
+
+	&.ghost:hover {
+		color: var(--color-primary);
+		background-color: hsl(from var(--color-gray) h s 80% / 0.5);
+	}
+
+	/* Size */
+
+	&.sm {
+		font-size: small;
+	}
+
+	&.md {
+		font-size: medium;
+	}
+
+	&.lg {
+		font-size: large;
+	}
+}

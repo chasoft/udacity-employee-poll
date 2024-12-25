@@ -63,3 +63,10 @@ h6 {
 #__next {
 	isolation: isolate;
 }
+
+/*
+  10. Others
+*/
+ul {
+	list-style: none;
+}
